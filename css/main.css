@@ -115,6 +115,11 @@ li:hover {
     transform: none;
     opacity: 1;
 }
+.wrapper {
+    width: 370px;
+    margin-left: 1rem;
+    padding: 0 1rem 0 0;
+}
 .me {
     padding-top: 100px;
 }
