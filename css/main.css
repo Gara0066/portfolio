@@ -1,0 +1,111 @@
+/* Variable declarations */
+:root {
+    --main-color: #000;
+    --sec-color: #fff;
+    --third-color: #D8E251;
+    --fourth-color: #195B6B;
+    --button-color: linear-gradient(to bottom, #195b6b, #005f85, #2d5f9b, #6557a5, #9a479b);
+    --symbol-color: #9A479B;
+    --title-font: 'Fredericka the Great', cursive;
+
+}
+
+nav {
+    margin: 0;
+    padding: 0;
+    color: var(--main-color);
+    font-family: 'Kodchasan', sans-serif;
+    overflow-x: hidden;
+    /* needed because hiding the menu on the right side is not perfect,  */
+}
+a {
+    text-decoration: none;
+    color: var(--sec-color);
+    transition: color 0.5s ease;
+}
+#menuToggle {
+    display: block;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    z-index: 1;
+    user-select: none;
+    padding-top: 0 auto;
+}
+#menuToggle input {
+    display: block;
+    width: 40px;
+    height: 32px;
+    position: absolute;
+    top: -7px;
+    left: -5px;
+    cursor: pointer;
+    opacity: 0;
+    /* hide this */
+    z-index: 2;
+    /* and place it over the hamburger */
+}
+/* * Just a quick hamburger*/
+#menuToggle span {
+    display: block;
+    width: 32px;
+    height: 5px;
+    margin-bottom: 6px;
+    position: relative;
+    background: var(--symbol-color);
+    border-radius: 5px;
+    z-index: 1;
+    transform-origin: -3px 1px;
+    transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0),
+            background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0),
+            opacity 0.55s ease;
+}
+#menuToggle span:first-child {
+    transform-origin: 0% 0%;
+}
+#menuToggle span:nth-last-child(2) {
+    transform-origin: 0% 100%;
+}
+/* * Transform all the slices of hamburger * into a crossmark. */
+#menuToggle input:checked~span {
+    opacity: 1;
+    transform: rotate(45deg) translate(-2px, -1px);
+    background: var(--third-color);
+}
+/** But let's hide the middle one.*/
+#menuToggle input:checked~span:nth-last-child(3) {
+    opacity: 0;
+    transform: rotate(0deg) scale(0.2, 0.2);
+}
+/* * Ohyeah and the last one should go the other direction */
+#menuToggle input:checked~span:nth-last-child(2) {
+    opacity: 1;
+    transform: rotate(-45deg) translate(0, -1px);
+}
+/* * Make this absolute positioned* at the top left of the screen*/
+#menu {
+    position: absolute;
+    width: 300px;
+    margin: -55px 0 0 0;
+    padding: 30px;
+    padding-top: 80px;
+    right: -100px;
+    background: var(--main-color);
+    list-style-type: none;
+    transform-origin: 0% 0%;
+    transform: translate(100%, 0);
+    transition: transform 0.5s cubic-bezier(.13,.92,.69,1.15);
+}
+#menu li {
+    padding: 15px 0 15px 4px;
+    font-size: 22px;
+}
+li:hover {
+    background-color: var(--symbol-color);
+    font-weight: 600;
+}
+/** And let's fade it in from the left*/
+#menuToggle input:checked~ul {
+    transform: none;
+    opacity: 1;
+}
