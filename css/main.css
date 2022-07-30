@@ -4,12 +4,13 @@
     --sec-color: #fff;
     --third-color: #D8E251;
     --fourth-color: #195B6B;
-    --button-color: linear-gradient(to bottom, #195b6b, #005f85, #2d5f9b, #6557a5, #9a479b);
     --symbol-color: #9A479B;
     --title-font: 'Fredericka the Great', cursive;
 
 }
-
+body {
+    font-family: 'Kodchasan', sans-serif;
+}
 .topnav {
     position: fixed;
     width: 100%;
@@ -22,7 +23,6 @@ nav {
     margin: 0;
     padding: 0;
     color: var(--main-color);
-    font-family: 'Kodchasan', sans-serif;
     overflow-x: hidden;
     /* needed because hiding the menu on the right side is not perfect,  */
 }
@@ -140,4 +140,16 @@ li:hover {
 
 .me, .about-banner, .portfolio-one, .portfolio-two {
     padding-top: 100px;
+}
+
+button {
+    border-radius: 60px;
+    border: none;
+    color: var(--sec-color);
+    font-size: 22px;
+    background-image: linear-gradient(to bottom, #005f85, #2d5f9b, #6557a5, #9a479b);
+    padding: 15px 30px;
+    margin: 25px 0;
+    cursor: pointer;
+    
 }
