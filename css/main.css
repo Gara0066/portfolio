@@ -10,6 +10,8 @@
 }
 body {
     font-family: 'Kodchasan', sans-serif;
+    box-sizing: border-box;
+    margin: 0;
 }
 .topnav {
     position: fixed;
@@ -143,13 +145,51 @@ li:hover {
 }
 
 button {
-    border-radius: 60px;
+    border-radius: 25px;
     border: none;
     color: var(--sec-color);
-    font-size: 22px;
+    font-size: 25px;
     background-image: linear-gradient(to bottom, #005f85, #2d5f9b, #6557a5, #9a479b);
     padding: 15px 30px;
     margin: 25px 0;
     cursor: pointer;
-    
+    font-weight: 600;
+    text-align: center;
+    width: 100%;
+}
+
+.me button, form button {
+    width: auto;
+}
+h1 {
+    font-size: 2.5rem;
+    text-align: center;
+}
+h2 {
+    text-align: center;
+    font-family: var(--title-font);
+    text-transform: uppercase;
+    font-size: 3rem;
+}
+p {
+    font-size: 1.3rem;
+    text-align: center;
+}
+form {
+    padding: .5rem;
+}
+input[type=text], [type=email] {
+    width: 100%;
+    height: 40px;
+    border-radius: 4px;
+    border-color: var(--symbol-color);
+    border-width: 2px;
+}
+textarea {
+    width: 100%;
+    min-height: 15rem;
+    border-radius: 4px;
+    border-color: var(--symbol-color);
+    border-width: 2px;
+    resize: vertical;
 }
