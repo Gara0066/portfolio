@@ -24,7 +24,7 @@
         <div class="topnav">
             <nav>
                 <div class="logo">
-                    <!--ADD LOGO PICTURE-- img src="images/"logo.png id="logo" alt="Lucia Garavito-logo"-->
+                    <!--ADD LOGO PICTURE img src="images/"logo.png id="logo" alt="Lucia Garavito-logo"-->
                 </div>
                 <div id="menuToggle">
                     <!--A fake / hidden checkbox is used as click reciever so you can use the :checked selector on it.-->
@@ -35,18 +35,18 @@
                     <span></span>
                     <!--Too bad the menu has to be inside of the button but hey, it's pure CSS magic.-->
                     <ul id="menu">
-                        <a href="#">
-                            <li>Home</li>
-                        </a>
-                        <a href="#">
-                            <li>About me</li>
-                        </a>
-                        <a href="#">
-                            <li>Portfolio</li>
-                        </a>
-                        <a href="#">
-                            <li>Contact</li>
-                        </a>
+                        <li>
+                            <a href="#Home">Home</a>
+                        </li>
+                        <li>
+                            <a href="#About">About me</a>
+                        </li>
+                        <li>
+                            <a href="#Portfolio">Portfolio</a>
+                        </li>
+                        <li>
+                            <a href="#Contact">Contact</a>
+                        </li>
                     </ul>
                 </div>
             </nav>
@@ -55,13 +55,11 @@
     <!--Add wrapper to each section to set content to an overall width-->
     <!--Creates section and adds divs per topic identified by classes so they can be selected and manipulated individually by using flex or grid to design a responsive and orginzed layout-->
      <!--Creates section for main banner where logo and self-portrait will be placed-->
-    <section class="main">
-        <div class="banner">
-            <div class="wrapper">
-                <!--ADDS IMAGES LOGO-->
-            </div>
+    <div class="banner">
+        <div class="wrapper">
+            <!--ADDS IMAGES LOGO-->
         </div>
-    </section>
+    </div>
     <!--Creates section for get to know me and adds button to link it to About me page-->
     <section class="me">
         <div class="wrapper">
@@ -73,9 +71,8 @@
     </section>
     <section class="portfolio">
         <div class="wrapper">
-            <div class="port-illust">
-
-            </div>
+            <div class="port-illust"></div>
+            <h2>Portfolio</h2>
             <div class="port-ux"></div>
             <div class="port-web"></div>
             <div class="port-photo"></div>
@@ -86,7 +83,7 @@
             <h2>Get in touch</h2>
             <p> Do you want to work with me? I am always up to catch up over a cup of coffee!</p>
             <form action="/action_page.php" method="get">
-                <label for="fname"></label><br>
+                <label for="name"></label><br>
                 <input type="text" id="name" name="name" value="Your Name"><br>
                 <label for="mail"></label><br>
                 <input type="email" id="mail" name="Email" value="Email"><br>
@@ -95,11 +92,13 @@
             </form>
         </div>
     </section>
-
-    
-    
-
-
+    <footer>
+        <div class="wrapper">
+            <p> &#169 Copyright Lucia Garavito</p>
+            <p> All rights reserved 2022.</p>   
+        </div> 
+    </footer>
 </body>
+
 
 </html>
