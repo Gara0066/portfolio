@@ -337,10 +337,9 @@ textarea {
     .portfolio-one h2 {
         color: #000;
     }
-    
-    .button {
-        width: 50%;
-
+    .btn {
+        display: flex;
+        justify-content: center;
     }
     
   }

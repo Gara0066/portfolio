@@ -21,8 +21,13 @@
     <!--Adds header to introduce PORTFOLIO webpage by placing a logo and to set navigational links as hamburger menu-->
 
     <!--    Made by Erik Terwan 24th of November 2015 MIT License  -->
+    <ul class="skip-links">
+        <li><a href="#nav">Skip to main nav</a></li>
+        <li><a href="#port1">Skip to Portfolio Illustration</a></li>
+
+      </ul>
     <header>
-        <div class="topnav">
+        <div class="topnav" id="nav">
             <nav>
                 <div class="logo">
                     <!--ADD LOGO PICTURE img src="images/"logo.png id="logo" alt="Lucia Garavito-logo"-->
@@ -37,32 +42,41 @@
                     <!--Too bad the menu has to be inside of the button but hey, it's pure CSS magic.-->
                     <ul id="menu">
                         <li>
-                            <a href="#Home">Home</a>
+                            <a href="index.html#Home">Home</a>
                         </li>
                         <li>
-                            <a href="#About">About me</a>
+                            <a href="about.html">About me</a>
                         </li>
                         <li>
-                            <a href="#Portfolio">Portfolio</a>
+                            <a href="Portfolio.html">Portfolio</a>
                         </li>
                         <li>
-                            <a href="#Contact">Contact</a>
+                            <a href="index.html#contact">Contact</a>
                         </li>
                     </ul>
                 </div>
             </nav>
         </div>
     </header>
-    <section class="portfolio-two">
+    <section class="portfolio-one">
         <div class="wrapper">
+            <div class="port-banner-ux">
+                <h2 class="display-1 p-4">UX DESIGN</h2>
+                <div class="row">
+                    <img src="images/ux/ux-1-460_x_690.jpg" class="img-fluid col-sm-4 p-2">
+                    <img src="images/ux/ux-11-460_x_690.jpg" class="img-fluid col-sm-4 p-2">
+                    <img src="images/ux/ux-111-240_x_460.jpg" class="img-fluid col-sm-4 p-2">                    
+                </div>
+            </div>
             <div class="port-banner-web">
-                <h2>Web Dev</h2>
+                <h2 class="display-1 p-4">Photography</h2>
+            <div class="row">
+
             </div>
-            <div class="port-banner-photo">
-                <h2>Photography</h2>
+                
             </div>
-            <button class="shadow">Back</button>
-        </div>        
+            <button class="shadow">Next</button>
+        </div>    
     </section>
     <footer>
         <div class="wrapper">
