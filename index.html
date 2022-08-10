@@ -19,11 +19,17 @@
 </head>
 
 <body>
+    <ul class="skip-links">
+        <li><a href="#nav">Skip to main nav</a></li>
+        <li><a href="#about">Skip to Get to know me</a></li>
+        <li><a href="#portfolio">Skip to portfolio</a></li>
+        <li><a href="#contact">Skip to contact section</a></li>
+      </ul>
     <!--Adds header to introduce PORTFOLIO webpage by placing a logo and to set navigational links as hamburger menu-->
 
     <!--    Made by Erik Terwan 24th of November 2015 MIT License  -->
     <header>
-        <div class="topnav">
+        <div class="topnav" id="nav">
             <nav>
                 <div class="logo">
                     <!--ADD LOGO PICTURE img src="images/"logo.png id="logo" alt="Lucia Garavito-logo"-->
@@ -63,7 +69,7 @@
         </div>
     </div>
     <!--Creates section for get to know me and adds button to link it to About me page-->
-    <section class="me">
+    <section class="me" id="about">
         <div class="wrapper">
             <h1>Lucia Garavito</h1>
             <h2>GARAVATO</h2>
@@ -71,7 +77,7 @@
             <button class="shadow">Click</button>
         </div>
     </section>
-    <section class="portfolio">
+    <section class="portfolio" id="portfolio">
         <div class="wrapper">
             <h2>Portfolio</h2>
             <div class="port-illust">
@@ -88,7 +94,7 @@
             </div>
         </div>
     </section>
-    <section class="touch">
+    <section class="touch" id="contact">
         <div class="wrapper">
             <h2>Get in touch</h2>
             <p> Do you want to work with me? I am always up to catch up over a cup of coffee!</p>
@@ -110,6 +116,4 @@
         </div> 
     </footer>
 </body>
-
-
 </html>
