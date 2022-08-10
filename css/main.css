@@ -262,8 +262,8 @@ textarea {
     color: var(--symbol-color);
     font-weight: bold;
  }
- .about-banner {
-    background-color: #fff;
+ .about-banner p{
+    color:var(--main-color)
  }
  .about-banner h1 {
     font-family: var(--title-font);
