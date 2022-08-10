@@ -198,16 +198,6 @@ textarea {
  img {
     border-radius: 40px 10px;
  }
- .about-banner {
-    background-image: url("../images/banner1sm.jpg");
-    max-width: 100%;
-    background-size: cover;
-    background-position: center;
-    display: flex;
-    align-items: center;
-    position: relative;
-    z-index: -1;    
- }
 
  .title {
     font-weight: bold;
@@ -226,6 +216,9 @@ textarea {
  .purple {
     color: var(--symbol-color);
     font-weight: bold;
+ }
+ .about-banner {
+    background-color: #fff;
  }
  .about-banner h1 {
     font-family: var(--title-font);
