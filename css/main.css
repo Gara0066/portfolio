@@ -302,9 +302,7 @@ textarea {
      #menu {
         width: 100%;
         display: flex;
-        justify-content: space-around;
-        margin: auto;
-        padding: 1px;
+        justify-content:end;
         position: static;
         transform: translate(0);
     } 
@@ -312,8 +310,12 @@ textarea {
         display: none;
     }
     #menu li {
-        padding: 10px;
+        padding: 5px;
         font-size: 25px;
+        margin: 10px;
+    }
+    .topnav {
+        background: none;
     }
 
     .wrapper {
@@ -345,6 +347,7 @@ textarea {
     .me {
         display: flex;
         justify-content: left;
+        background-image: url(../images/Portrait2-960_x_640-1200_x_640.png);
     }
   }
 
