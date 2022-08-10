@@ -333,6 +333,15 @@ textarea {
     #abtsecondpic {
         width: 50%;
     }
+
+    .portfolio-one h2 {
+        color: #000;
+    }
+    
+    .button {
+        width: 50%;
+
+    }
     
   }
 
