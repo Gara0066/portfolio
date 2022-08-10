@@ -164,6 +164,7 @@ button {
 h1 {
     font-size: 2.5rem;
     text-align: center;
+    margin: auto;
 }
 h2 {
     text-align: center;
@@ -197,6 +198,16 @@ textarea {
  img {
     border-radius: 40px 10px;
  }
+ .about-banner {
+    background-image: url("../images/banner1sm.jpg");
+    max-width: 100%;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    position: relative;
+    z-index: -1;    
+ }
 
  .title {
     font-weight: bold;
@@ -206,4 +217,26 @@ textarea {
 
  .blue {
     color: var(--fourth-color);
+    font-weight: bold;
+ }
+ .green {
+    color: var(--third-color);
+    font-weight: bold;
+ }
+ .purple {
+    color: var(--symbol-color);
+    font-weight: bold;
+ }
+ .about-banner h1 {
+    font-family: var(--title-font);
+    font-size: 3.5rem;
+ }
+ .about-banner h3 {
+    text-align: center;
+ }
+ .about-banner img {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    width: 100%;
+    
  }
