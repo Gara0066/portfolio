@@ -349,6 +349,18 @@ textarea {
         justify-content: left;
         background-image: url(../images/Portrait2-960_x_640-1200_x_640.png);
     }
+    .back {
+        display: flex;
+        justify-content: center;
+        margin: auto;
+        width: 30%;
+    }
+    .next {
+        display: flex;
+        justify-content: center;
+        margin: auto;
+        width: 30%;
+    }
   }
 
 
