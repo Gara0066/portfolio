@@ -31,7 +31,6 @@
     <header>
         <div class="topnav" id="nav">
             <nav>
-                </div>
                 <div id="menuToggle">
                     <!--A fake / hidden checkbox is used as click reciever so you can use the :checked selector on it.-->
                     <input type="checkbox" />
@@ -42,7 +41,7 @@
                     <!--Too bad the menu has to be inside of the button but hey, it's pure CSS magic.-->
                     <ul id="menu">
                         <li>
-                            <a href="index.html#Home">Home</a>
+                            <a href="index.html">Home</a>
                         </li>
                         <li>
                             <a href="about.html">About me</a>
@@ -65,7 +64,7 @@
         <div class="wrapper">
             <div class="row">
                 <img src="images/Portrait7-640_x_420.png" alt="half-picture-half-uillustration Lucia" class="img-fluid col-md-6">
-                <img src="images/Artboard 2.png" alt="logo-garavato" class="img-fluid col-md-6 p-5">
+                <img src="images/Artboard2.png" alt="logo-garavato" class="img-fluid col-md-6 p-5">
         </div>
         </div>
     </div>
@@ -75,28 +74,29 @@
             <h1>Lucia Garavito</h1>
             <h2>GARAVATO</h2>
             <p>Do you want to know more about me?</p>
-            <button class="shadow"><a href="about.html">Click</a></button>
+            <a href="about.html"><button class="shadow">Click</button></a>
         </div>
     </section>
+    <!--******************ADDS A HREF TO BUTTON TO AVOID JAVASCRIPT MISUSE WITH ONCLICK TAG/AWARE ERROR IN VALIDATOR/***********-->
     <section class="portfolio" id="portfolio">
         <div class="wrapper">
             <div class="row">
                 <h2 class="p-5">Portfolio</h2>
                 <div class="port-illust col-md-3">
-                    <img src="images/portfolio-ill-320_x_460.jpg" class="img-fluid">
-                    <button class="shadow"><a href="portfolio.html#illu">Illustration </a></button>
+                    <img src="images/portfolio-ill-320_x_460.jpg" class="img-fluid" alt="portfolio-image">
+                    <a href="portfolio.html#illu"><button class="shadow">Illustration</button></a>
                 </div>
                 <div class="port-ux col-md-3">
                     <img src="images/portfolio-ux-320_x_460.jpg" class="img-fluid" alt="Photo by Plann from Pexels: https://www.pexels.com/photo/person-holding-smartphone-4549416/">
-                    <button class="shadow"><a href="portfoliotwo.html">UX/UI Design</a></button>
+                    <a href="portfoliotwo.html"><button class="shadow"></button>UX/UI Design</button></a>
                 </div>
                 <div class="port-web col-md-3">
-                    <img src="images/portfolio-web-320_x_460.jpg" class="img-fluid">
-                    <button class="shadow"><a href="portfoliotwo.html#web">Web Dev</a></button>
+                    <img src="images/portfolio-web-320_x_460.jpg" class="img-fluid" alt="picture-portfolio-piece">
+                    <a href="portfoliotwo.html#web"><button class="shadow">Web Dev</button></a>
                 </div>
                 <div class="port-photo col-md-3">
-                    <img src="images/portfolio-photo-320_x_460.jpg" class="img-fluid">
-                    <button class="shadow"><a href="portfolio.html#foto">Photography</a></button>
+                    <img src="images/portfolio-photo-320_x_460.jpg" class="img-fluid" alt="photo-portfolio-piece">
+                    <a href="portfolio.html#foto"><button class="shadow">Photography</button></a>
                 </div>
             </div>
         </div>
