@@ -198,6 +198,7 @@ p {
     font-size: 1.3rem;
     text-align: center;
 }
+
 form {
     padding: .5rem;
 }
@@ -310,12 +311,9 @@ textarea {
         display: none;
     }
     #menu li {
-        padding: 5px;
+        padding: 0 5px;
         font-size: 25px;
-        margin: 10px;
-    }
-    .topnav {
-        background: none;
+        margin: 0 10px 0 15px;
     }
 
     .wrapper {
@@ -328,6 +326,9 @@ textarea {
         margin-bottom: 1rem;
         width: 40%;
      }
+     .garavato {
+        height: 200px;
+    }
      h2 {
         font-size: 5rem;
      }
@@ -361,6 +362,7 @@ textarea {
         margin: auto;
         width: 30%;
     }
+
   }
 
 
